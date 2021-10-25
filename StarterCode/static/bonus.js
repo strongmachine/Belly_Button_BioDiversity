@@ -50,9 +50,8 @@ function buildGaugeChart(sample) {
 }
 
 
-//======================================================//
 //=============== Build a GAUGE Chart ==================//
-//======================================================//
+
 function gaugeChart(data) {
     console.log("gaugeChart", data);
 
