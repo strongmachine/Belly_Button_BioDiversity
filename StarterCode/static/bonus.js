@@ -62,19 +62,19 @@ function gaugeChart(data) {
 
     let degree = parseInt(data.wfreq) * (180 / 10);
 
-    // Trig to calc meter point
+    // meter point calculations
     let degrees = 180 - degree;
     let radius = .5;
     let radians = degrees * Math.PI / 180;
     let x = radius * Math.cos(radians);
     let y = radius * Math.sin(radians);
 
-    let mainPath = 'M -.0 -0.025 L .0 0.025 L ',
-        pathX = String(x),
-        space = ' ',
-        pathY = String(y),
-        pathEnd = ' Z';
-    let path = mainPath.concat(pathX, space, pathY, pathEnd);
+    let main_Path = 'M -.0 -0.025 L .0 0.025 L ',
+        X_path = String(x),
+        spc = ' ',
+        Y_path = String(y),
+        path_End = ' Z';
+    let path = main_Path.concat(X_path, spc, Y_path, path_End);
 
     let trace = [{
         type: 'scatter',
